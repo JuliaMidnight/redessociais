@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redes Sociais</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        #particles-js {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background-color: #edcfff;
+        }
+
+
+        body {
+            position: relative;
+            margin: 0;
+            z-index: 1;
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+    <div id="particles-js"></div>
+    <div class="container">
+        <h2>Social Media</h2>
+    </div>
+
+    <table>
+        <tr>
+            <td>
+                <a href="https://steamcommunity.com/id/gostosaS2/" target="_blank"
+                    style="text-decoration: none; color: inherit;">
+                    <h1>Steam</h1>
+                </a>
+            </td>
+            <td>
+                <a href="https://steamcommunity.com/id/gostosaS2/" target="_blank">
+                    <img src="steam.png" width="50">
+                </a>
+            </td>
+        </tr>
+
+        <td>
+            <a href="https://www.instagram.com/eu_julinhas2/" target="_blank"
+                style="text-decoration: none; color: inherit;">
+                <h1>Instagram</h1>
+            </a>
+        </td>
+        <a href="https://www.instagram.com/eu_julinhas2/" target="_blank">
+            <td><img src="instagram.png" width="50"></td>
+        </a>
+        </tr>
+
+        <tr>
+            <td>
+                <a href="https://www.tiktok.com/@eu_julinhas2" target="_blank"
+                    style="text-decoration: none; color: inherit;">
+                    <h1>TikTok</h1>
+                </a>
+            </td>
+            <td><img src="tiktok.png" width="50"></td>
+            <a href="https://www.tiktok.com/@eu_julinhas2" target="_blank"></a>
+        </tr>
+
+        <tr>
+            <td>
+                <a href="https://x.com/rl_julias2" target="_blank" style="text-decoration: none; color: inherit;">
+                    <h1>Twitter</h1>
+            </td>
+            <td><img src="x.png" width="50"></td>
+            <a href="https://x.com/rl_julias2" target="_blank"></a>
+        </tr>
+
+        <tr>
+            <td>
+                <a href="https://www.youtube.com/channel/UCgostosaS2" target="_blank"
+                    style="text-decoration: none; color: inherit;">
+                    <h1>YouTube</h1>
+                </a>
+            </td>
+            <td><img src="youtube.png" width="50"></td>
+            <a href="https://www.youtube.com/channel/UCgostosaS2 " target="_blank"></a>
+        </tr>
+
+        <tr>
+            <td>
+                <a href="https://discord.gg/u5DfzveJ" target="_blank" style="text-decoration: none; color: inherit;">
+                    <h1>Discord</h1>
+                </a>
+            </td>
+            <td><img src="discord.png" width="50"></td>
+            <a href="https://discord.gg/u5DfzveJ" target="_blank"></a>
+        </tr>
+
+        <tr>
+            <td>
+                <a href="https://github.com/Liazinhas2" target="_blank" style="text-decoration: none; color: inherit;">
+                    <h1>Github</h1>
+                </a>
+            </td>
+            <td><img src="github.png" width="50"></td>
+            <a href="https://github.com/Liazinhas2" target="_blank"></a>
+        </tr>
+
+
+
+        <tr>
+            <td>
+                <h1>Name</h1>
+            </td>
+            <td><img src="name.png" width="50"></td>
+        </tr>
+
+    </table>
+
+    <audio id="bg-music" loop preload="auto">
+        <source src="Sabrina Carpenter - Espresso Official Instrumental.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+    <script>
+
+        particlesJS("particles-js", {
+            "particles": {
+                "number": {
+                    "value": 100,
+                    "density": { "enable": true, "value_area": 1200 }
+                },
+                "color": { "value": "#ffffff" },
+                "shape": { "type": "circle" },
+                "opacity": {
+                    "value": 0.15,
+                    "random": true,
+                    "anim": { "enable": true, "speed": 1, "opacity_min": 1, "sync": false }
+                },
+                "size": {
+                    "value": 4,
+                    "random": true,
+                    "anim": { "enable": false }
+                },
+                "line_linked": {
+                    "enable": true,
+                    "distance": 200,
+                    "color": "#ffffff",
+                    "opacity": 1,
+                    "width": 1
+                },
+                "move": {
+                    "enable": true,
+                    "speed": 3,
+                    "direction": "none",
+                    "random": false,
+                    "straight": false,
+                    "out_mode": "out",
+                    "bounce": true
+                }
+            },
+            "interactivity": {
+                "detect_on": "canvas",
+                "events": {
+                    "onhover": { "enable": true, "mode": "grab" },
+                    "onclick": { "enable": true, "mode": "push" }
+                }
+            },
+            "retina_detect": true
+        });
+
+        const audio = document.getElementById('bg-music');
+        audio.volume = 0.02;
+        window.addEventListener('click', () => {
+            if (audio.paused) {
+                audio.play();
+            }
+        }, { once: true });
+    </script>
+
+</body>
+
+</html>

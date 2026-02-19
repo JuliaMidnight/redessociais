@@ -1,0 +1,95 @@
+html
+
+body {
+    height: 100%;
+    margin: 20;
+    padding: 20;
+    font-family: -apple-system, BlinkMacSystemFont, 'Aharoni', Roboto, 'Ahoroni', 'Helvetica Neue', Ahoroni, sans-serif;
+    background-color: rgb(253, 240, 240);
+    color: rgba(235, 97, 170, 0.83);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-position: center, top left;
+    background-repeat: no-repeat, repeat;
+    background-size: 50% auto, cover;
+    -webkit-font-smoothing: antialiased;
+}
+
+.container {
+    width: 90%;
+    max-width: 900px;
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+
+.backend {
+    height: 500px;
+    width: 500px;
+    border-radius: 15px;
+
+}
+
+h2 {
+    margin-top: 2rem;
+    color: rgb(139, 94, 60);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+table {
+    border: blur(100px);
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 192, 203, 0.5);
+    border-radius: 20px;
+    padding: 10px;
+}
+
+td {
+    padding: 1rem 1.5rem;
+    vertical-align: middle;
+    border-bottom: 1px solid rgb(255, 192, 203);
+}
+
+h1 {
+    font-size: 1.2rem;
+    margin: 0;
+    font-weight: 600;
+}
+
+img {
+    
+    display: block;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+
+link {
+    text-decoration: none;
+    color: rgb(235, 97, 170);
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.cursor-hk {
+cursor: pointer !important;
+    cursor: url('hellokitty.png'), auto;
+}
+
+.div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
